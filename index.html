@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="/index.css" />
+    <!-- <link rel="stylesheet" href="/index.css" /> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       @keyframes marquee {
@@ -25,12 +25,12 @@
       }
     </style>
   </head>
-  <body>
+  <body class="bg-black text-yellow-200">
     <nav
       id="headings"
       class="bg-black p-4 text-yellow-200 fixed top-0 left-0 w-full z-20"
     >
-      <div class="container mx-auto flex justify-between " id="header">
+      <div class="container mx-auto flex justify-between" id="header">
         <h1 class="font-bold">Portfolio</h1>
         <div id="links">
           <a href="/index.html" class="px-4">Home</a>
@@ -40,31 +40,33 @@
         </div>
       </div>
     </nav>
-
     <!-- home -->
     <div
       id="main"
-      class="flex md:flex-row items-center justify-between container mx-auto mt-[12%] px-6"
+      class="flex  md:flex-row items-center justify-between container mx-auto mt-[12%] px-6"
     >
       <div id="left" class="md:w-1/2 text-center md:text-left space-y-4">
         <h1 class="text-4xl font-bold" id="main-text">Khushi Mishra</h1>
         <p class="text-gray-600" id="main-p">
-          I am a highly motivated and enthusiastic individual with a strong academic background in Computer
-          Science& Engineering. Passionate about leveraging my knowledge and skills to contribute to innovative
-          projects and solve real-world problems.I am eager to learn and grow in a dynamic, team-oriented
-          environment while staying updated with the latest industry trends such as HTML,CSS,JS,Node.js,React.js.
-          With excellent communication, problem-solving abilities, and adaptability,I am committed to making a
-          meaningful impact in my professional journey.
+          I am a highly motivated and enthusiastic individual with a strong
+          academic background in Computer Science& Engineering. Passionate about
+          leveraging my knowledge and skills to contribute to innovative
+          projects and solve real-world problems.I am eager to learn and grow in
+          a dynamic, team-oriented environment while staying updated with the
+          latest industry trends such as HTML,CSS,JS,Node.js,React.js. With
+          excellent communication, problem-solving abilities, and adaptability,I
+          am committed to making a meaningful impact in my professional journey.
         </p>
         <button
-          class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transition" 
+          class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transition"
           id="main-btn"
         >
           Hire Me
         </button>
       </div>
       <div id="right" class="md:w-1/2 flex justify-center mt-6 md:mt-0">
-        <img id="right-img"
+        <img
+          id="right-img"
           src="./WhatsApp Image 2024-12-13 at 3.12.09 AM.jpeg"
           alt="Profile Image"
           class="w-64 h-64 object-cover rounded-full shadow-lg"
@@ -76,66 +78,69 @@
       <div class="container mx-auto">
         <div class="row">
           <div class="section-title text-left mb-5 pl-16">
-            <h2 class="relative text-4xl font-bold text-black">About Me
-              <span class="block h-1 w-12 bg-red-500 absolute top-full left-0"></span>
-              <span class="block h-1 w-6 bg-red-500 absolute top-[110%] left-0"></span>
+            <h2 class="relative text-4xl font-bold text-yellow-200">
+              About Me
+              <span
+                class="block h-1 w-12 bg-red-500 absolute top-full left-0"
+              ></span>
+              <span
+                class="block h-1 w-6 bg-red-500 absolute top-[120%] left-0"
+              ></span>
             </h2>
           </div>
         </div>
         <div class="row flex flex-col md:flex-row gap-6">
           <div class="about-content w-full md:w-2/3">
-            <h3 class="text-2xl font-bold text-black mb-4">I'm Khushi Mishra and <span class="text-red-500">Mern Stack Developer</span></h3>
-            <p class="text-lg text-gray-600 leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-          </div>
-          <div class="details w-full md:w-1/3 flex flex-col md:flex-row gap-6">
-            <div class="personal-info w-full md:w-3/5 mt-10">
-              <div class="grid grid-cols-2 gap-4">
-                <p class="font-semibold border-b pb-2 text-gray-700">Birthday: <span class="font-normal ml-1 text-gray-800">13 April 2003</span></p>
-                <p class="font-semibold border-b pb-2 text-gray-700">Age: <span class="font-normal ml-1 text-gray-800">20</span></p>
-                <p class="font-semibold border-b pb-2 text-gray-700">Degree: <span class="font-normal ml-1 text-gray-800">Computer Science</span></p>
-                <p class="font-semibold border-b pb-2 text-gray-700">Email: <span class="font-normal ml-1 text-gray-800">info@gmail.com</span></p>
-                <p class="font-semibold border-b pb-2 text-gray-700">Phone: <span class="font-normal ml-1 text-gray-800">1234567890</span></p>
-                <p class="font-semibold border-b pb-2 text-gray-700">City: <span class="font-normal ml-1 text-gray-800">Bhopal</span></p>
-              </div>
-              <div class="mt-6 flex gap-4">
-                <a href="#" class="btn bg-red-500 text-white py-3 px-8 rounded-full hover:scale-105 transition">Download CV</a>
-                <a href="/Contact.html" class="btn bg-red-500 text-white py-3 px-8 rounded-full hover:scale-105 transition">Hire me</a>
-              </div>
-            </div>
-            <div class="skills w-full md:w-2/5 mt-10">
-              <div class="mb-6">
-                <h5 class="text-lg font-semibold text-black">CSS</h5>
-                <div class="w-full bg-gray-200 h-2 rounded-lg relative">
-                  <div class="absolute left-0 top-0 h-full bg-red-500 w-[96%] rounded-lg"></div>
-                </div>
-              </div>
-              <div class="mb-6">
-                <h5 class="text-lg font-semibold text-black">JavaScript</h5>
-                <div class="w-full bg-gray-200 h-2 rounded-lg relative">
-                  <div class="absolute left-0 top-0 h-full bg-red-500 w-[76%] rounded-lg"></div>
-                </div>
-              </div>
-            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">
+              I'm Khushi Mishra and
+              <span class="text-red-500">Mern Stack Developer</span>
+            </h3>
+            <p class="text-lg text-gray-600 leading-7">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+              cumque ullam ex autem, molestias ratione, pariatur consequuntur
+              officiis voluptatibus nulla alias debitis saepe adipisci inventore
+              quibusdam iusto sequi accusantium, veritatis facilis animi hic
+              perspiciatis. Officia fugiat, accusantium sunt libero facere porro
+              iure ipsum odio consequatur nobis possimus quisquam labore
+              excepturi dolorem ea perspiciatis, hic ex.
+            </p>
           </div>
         </div>
         <div class="edu-details flex flex-col md:flex-row gap-12 mt-10">
           <div class="education w-full md:w-1/2">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">Education</h3>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md border border-gray-400">
+            <h3 class="text-2xl font-bold text-white mb-6 mt-10">
+              Education
+            </h3>
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-md border border-gray-400"
+            >
               <div class="relative pl-10">
-                <div class="absolute left-0 top-0 h-4 w-4 bg-red-500 rounded-full"></div>
-                <h4 class="text-lg font-semibold text-gray-800">Master in Computer Science</h4>
+                <h4 class="text-lg font-semibold text-gray-800">
+                  Master in Computer Science
+                </h4>
+                <p class="text-sm text-gray-500">2013-2014</p>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet...</p>
+              </div>
+              <div class="relative pl-10 mt-2">
+                <h4 class="text-lg font-semibold text-gray-800">
+                  Master in Computer Science
+                </h4>
                 <p class="text-sm text-gray-500">2013-2014</p>
                 <p class="text-gray-600">Lorem ipsum dolor sit amet...</p>
               </div>
             </div>
           </div>
           <div class="experience w-full md:w-1/2">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">Experience</h3>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md border border-gray-400">
+            <h3 class="text-2xl font-bold text-white mb-6 mt-10">
+              Experience
+            </h3>
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-md border border-gray-400"
+            >
               <div class="relative pl-10">
-                <div class="absolute left-0 top-0 h-4 w-4 bg-red-500 rounded-full"></div>
-                <h4 class="text-lg font-semibold text-gray-800">Software Developer</h4>
+                <h4 class="text-lg font-semibold text-gray-800">
+                  Software Developer
+                </h4>
                 <p class="text-sm text-gray-500">2013-2014</p>
                 <p class="text-gray-600">Lorem ipsum dolor sit amet...</p>
               </div>
@@ -144,10 +149,13 @@
         </div>
       </div>
     </section>
-    
+
     <!-- project section -->
-    <div id="project" class="mx-auto bg-white p-6 rounded-lg  mt-[10%]">
-      <p class="text-2xl font-bold text-center mb-6"> Here, you'll find a collection of projects that showcase my skills, creativity.</p>
+    <div id="project" class="mx-auto bg-black text-yellow-200 p-6 rounded-lg mt-[10%]">
+      <p class="text-2xl font-bold text-center mb-6">
+        Here, you'll find a collection of projects that showcase my skills,
+        creativity.
+      </p>
 
       <div id="Project-main">
         <!-- Project 1 -->
@@ -232,11 +240,13 @@
       </div>
     </div>
     <!-- skills section -->
-<div class="bg-white mt-[10%]">
-  <p class="text-xl font-bold text-center">I have worked with a range of tools and frameworks to build efficient, scalable, and user-friendly applications.</p>
-</div>
-    <div id="skills" class="text-black bg-white overflow-hidden mt-6">
-     
+    <div class="bg-black  mt-[10%]">
+      <p class="text-xl font-bold text-center">
+        I have worked with a range of tools and frameworks to build efficient,
+        scalable, and user-friendly applications.
+      </p>
+    </div>
+    <div id="skills" class="text-white bg-black overflow-hidden mt-6">
       <div class="marquee p-4 text-center text-6xl">
         <div class="w-full flex flex-row gap-16">
           <h1>HTML</h1>
@@ -250,41 +260,48 @@
         </div>
       </div>
     </div>
-<!-- footer -->
-<footer class="bg-white text-black mt-10 px-6 py-8 md:px-16">
-  <!-- Top Footer -->
-  <div class="text-center text-xl font-bold">
-    <p>Khushi</p>
-  </div>
+    <!-- footer -->
+    <footer class="bg-black text-white mt-10 px-6 py-8 md:px-16">
+      <!-- Top Footer -->
+      <div class="text-center text-xl font-bold">
+        <p>Khushi</p>
+      </div>
 
-  <!-- Middle Footer (Navigation Links) -->
-  <div class="mt-4">
-    <ul class="footer-menu flex flex-wrap justify-center space-x-6 md:space-x-10">
-      <li class="footer-menu_list">
-        <a href="index.html" class="hover:text-blue-500 transition">Home</a>
-      </li>
-      <li class="footer-menu_list">
-        <a href="Skills.html" class="hover:text-blue-500 transition">Skills</a>
-      </li>
-      <li class="footer-menu_list">
-        <a href="Projects.html" class="hover:text-blue-500 transition">Services</a>
-      </li>
-      <li class="footer-menu_list">
-        <a href="Contact.html" class="hover:text-blue-500 transition">Contact</a>
-      </li>
-    </ul>
-  </div>
+      <!-- Middle Footer (Navigation Links) -->
+      <div class="mt-4">
+        <ul
+          class="footer-menu flex flex-wrap justify-center space-x-6 md:space-x-10"
+        >
+          <li class="footer-menu_list">
+            <a href="index.html" class="hover:text-blue-500 transition">Home</a>
+          </li>
+          <li class="footer-menu_list">
+            <a href="Skills.html" class="hover:text-blue-500 transition"
+              >Skills</a
+            >
+          </li>
+          <li class="footer-menu_list">
+            <a href="Projects.html" class="hover:text-blue-500 transition"
+              >Services</a
+            >
+          </li>
+          <li class="footer-menu_list">
+            <a href="Contact.html" class="hover:text-blue-500 transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
 
-  <!-- Bottom Footer -->
-  <div class="mt-6 text-center text-sm text-gray-600">
-    <p>
-      Copyright &copy;
-      <a href="#main" class="text-blue-500 hover:underline">Khushi</a> - All rights reserved
-    </p>
-  </div>
-</footer>
-
-
+      <!-- Bottom Footer -->
+      <div class="mt-6 text-center text-sm text-gray-600">
+        <p>
+          Copyright &copy;
+          <a href="#main" class="text-blue-500 hover:underline">Khushi</a> - All
+          rights reserved
+        </p>
+      </div>
+    </footer>
 
     <script>
       document.querySelectorAll(".toggle-btn").forEach((button) => {
@@ -304,66 +321,59 @@
         });
       });
     </script>
-      <!--  scroll reveal animation  -->
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const sr = ScrollReveal({
-            origin: "top",
-            distance: "80px",
-            duration: 2000,
-            reset: true
-          });
-      
-          // home
-          sr.reveal("#left",{})
-          sr.reveal("#main-text", {delay:100});
-          sr.reveal("#main-p", { delay: 100 });
-          sr.reveal("#main-btn", { delay: 300 });
-          sr.reveal("#right-img", { delay: 300 });
+    <!--  scroll reveal animation  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sr = ScrollReveal({
+          origin: "top",
+          distance: "80px",
+          duration: 2000,
+          reset: true,
+        });
 
-          // project
-          sr.reveal("#Project-main", {interval: 200 });
-       
+        // home
+        sr.reveal("#left", {});
+        sr.reveal("#main-text", { delay: 100 });
+        sr.reveal("#main-p", { delay: 100 });
+        sr.reveal("#main-btn", { delay: 300 });
+        sr.reveal("#right-img", { delay: 300 });
+
+        // project
+        sr.reveal("#Project-main", { interval: 200 });
+
         // heading
-       sr.reveal("#headings", {});
-       sr.reveal("#about-title", {delay:300});
-       sr.reveal("#about-row", {delay:400});
-         
+        sr.reveal("#headings", {});
+        sr.reveal("#about-title", { delay: 300 });
+        sr.reveal("#about-row", { delay: 400 });
+      });
+    </script>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const srleft = ScrollReveal({
+          origin: "left",
+          distance: "80px",
+          duration: 2000,
+          reset: true,
         });
-      </script>
-      
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-   const srleft = ScrollReveal({
-            origin: "left",
-            distance: "80px",
-            duration: 2000,
-            reset: true
-          });
+        srleft.reveal("#about-personal-info", { delay: 100 });
+        srleft.reveal(".education", { delay: 200 });
+      });
+    </script>
 
-          srleft.reveal("#about-personal-info", {delay: 100});
-          srleft.reveal(".education", {delay: 200});
-         
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const srright = ScrollReveal({
+          origin: "right",
+          distance: "80px",
+          duration: 2000,
+          reset: true,
         });
-</script>
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const srright = ScrollReveal({
-            origin: "right",
-            distance: "80px",
-            duration: 2000,
-            reset: true
-          });
-          srright.reveal("#about-skills", {delay: 100});
-          srright.reveal(".experience", {delay: 200});
-        })
-</script>
+        srright.reveal("#about-skills", { delay: 100 });
+        srright.reveal(".experience", { delay: 200 });
+      });
+    </script>
     <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 </html>
-
-
