@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav id="headings" class="bg-black bg-opacity-60 p-4 text-white">
+      <div class="container mx-auto flex justify-between">
+        <h1 class="font-bold">Portfolio</h1>
+
+        <div id="links">
+          <a href="/index.html" class="px-4">Home</a>
+          <a href="./Projects.html" class="px-4">Project</a>
+          <a href="./Skills.html" class="px-4">Skills</a>
+          <a href="./Contact.html" class="px-4">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="mt-6">
+      <p class="text-center font-bold text-xl">
+        Take a look and explore the work that defines my journey as a developer.
+      </p>
+      <section id="projects-section">
+        <div id="project-container">
+         
+          <div class="services-list">
+            <div class="project">
+              <img src="./bg_1_1.jpeg" alt="" />
+              <div class="layer">
+                <h3>website of exoape</h3>
+                <p>
+                    This is website . In this project react.js ,tailwind.css,framer motion is used
+                </p>
+                <a href="https://framer-seven-delta.vercel.app/"><i class="ri-link"></i></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="./bg_2.jpeg" alt="" />
+              <div class="layer">
+                <h3>calculator</h3>
+                <p>
+                    this is simple calculator to perform mathematical function such as add , subtract , multiply , divide . It is made up of simple html,css,js
+                </p>
+                <a href="https://kmishara.github.io/calculator/"><i class="ri-link"></i></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="./spotify.png" alt="" />
+              <div class="layer">
+                <h3>Music Streaming clone</h3>
+                <p>
+                    This is website of music streaming . This is responsive page . In this project html ,css ,express.js, node.js is used. In this project we search songs ,upload and login&signup function is available.
+                </p>
+                <a href="https://drive.google.com/file/d/1-MLeGmY07I-fAt5bJ6VhVqeE10PayPPN/view?usp=drivesdk"><i class="ri-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <button id="myButton" class="btn">see more</button>
+  
+          <div id="project-list">
+            <div class="project">
+              <img src="./react_pj.png" alt="" />
+              <div class="layer">
+                <h3>Food Landing Page</h3>
+                <p>
+                    This is responsive page . In this project react.js , tailwind.css is used. In this project we search items and add to cart function is available.',
+
+                </p>
+                <a href="https://foods-gilt.vercel.app/"><i class="ri-link"></i></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="./fit_pj.png" alt="" />
+              <div class="layer">
+                <h3>Fitness web application with workout,diet & motivation  </h3>
+                <p>
+                    This is website of fitness . In this project express.js, node.js is used for backend purpose and for frontend we used html,CSS,js .In this project login&signup function is available and after login we access the information about the exercise and diet food
+                </p>
+                <a href="https://clg-3lp7.onrender.com/"><i class="ri-link"></i></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="./premium_photo-1672234253746-99ac19181f0b.avif" alt="" />
+              <div class="layer">
+                <h3>website of e-commerce</h3>
+                <p>
+                    This is e-commerce website of clothes . In this project express.js, node.js is used for backend purpose and for frontend we used react.js and CSS .In this project login&signup function is available and see static page of clothes and also in admin pannel we add products.
+                </p>
+                <a href="#"><i class="ri-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="close-btn">See Less</button>
+      </section>
+    </div>
+<script>
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const seeMoreButton = document.getElementById("myButton");
+        const seeLessButton = document.querySelector(".close-btn");
+        const projectList = document.getElementById("project-list");
+    
+        // "See More" button click event
+        seeMoreButton.addEventListener("click", function () {
+            projectList.style.display = "grid"; // Show projects
+            seeMoreButton.style.display = "none"; // Hide "See More" button
+            seeLessButton.style.display = "block"; // Show "See Less" button
+        });
+    
+        // "See Less" button click event
+        seeLessButton.addEventListener("click", function () {
+            projectList.style.display = "none"; // Hide projects
+            seeMoreButton.style.display = "block"; // Show "See More" button again
+            seeLessButton.style.display = "none"; // Hide "See Less" button
+        });
+    });
+</script>
+    <!-- <script src="./script.js"></script> -->
+  </body>
+</html>

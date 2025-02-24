@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
+</head>
+<body class="bg-gray-100" >
+    <nav id="headings" class="bg-black bg-opacity-60 p-4 text-white">
+        <div class="container mx-auto flex justify-between">
+
+       
+        <h1 class="font-bold">Portfolio</h1>
+        
+        <div id="links">
+            <a href="/index.html" class="px-4">Home</a>
+            <a href="./Projects.html" class="px-4">Project</a>
+            <a href="./Skills.html" class="px-4">Skills</a>
+            <a href="./Contact.html" class="px-4">Contact</a>
+        </div>
+    </div>
+    </nav>
+    <section class="section  py-16 px-6" id="Contact">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+          <h1 class="text-3xl font-bold text-gray-800">Get in touch</h1>
+          <span class="text-gray-600 block mt-2">
+            Do you have a project in your mind? Contact me here
+          </span>
+        </div>
+  
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- Contact Info -->
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <h2 class="text-2xl font-semibold text-gray-800 flex items-center gap-2">
+              Find Me <i class="ri-map-pin-line text-red-500"></i>
+            </h2>
+            <p class="text-gray-600 mt-3 flex items-center gap-2">
+              <i class="ri-mail-line text-blue-500"></i> Email: example@gmail.com
+            </p>
+            <p class="text-gray-600 mt-2 flex items-center gap-2">
+              <i class="ri-phone-line text-green-500"></i> Tel: +123 456 7890
+            </p>
+          </div>
+  
+          <!-- Contact Form -->
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <form id="contact-form" class="space-y-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  id="name"
+                  class="border border-gray-300 p-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="email"
+                  id="email"
+                  class="border border-gray-300 p-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <textarea
+                id="message"
+                class="border border-gray-300 p-3 resize-none rounded-lg w-full h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Message"
+                required
+              ></textarea>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+                >
+                  Send <i class="ri-send-plane-fill ml-2"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+  
+
+</body>
+</html>

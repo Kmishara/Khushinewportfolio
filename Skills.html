@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav id="headings" class="bg-black bg-opacity-60 p-4 text-white">
+        <div class="container mx-auto flex justify-between">
+
+       
+        <h1 class="font-bold">Portfolio</h1>
+        <div id="links">
+            <a href="/index.html" class="px-4">Home</a>
+            <a href="./Projects.html" class="px-4">Project</a>
+            <a href="./Skills.html" class="px-4">Skills</a>
+            <a href="./Contact.html" class="px-4">Contact</a>
+        </div>
+    </div>
+    </nav>
+    <div>
+        <p class="text-center font-bold mt-6 text-xl"> Below are the key skills that empower me to turn ideas into reality and tackle complex challenges with confidence.</p>
+    </div>
+    <div class="skills-container flex flex-col gap-6" id="skills-container-main">
+        <div class="skills-box px-10 py-4 ml-[25%] mt-6 bg-white border border-gray-300 rounded-lg bg-yellow-100 shadow-md h-[45%] w-[35%]" id="skills-box-fe">
+            <h1 class="text-xl font-semibold mb-2">Frontend Developer</h1>
+            <ul class="list-disc pl-5">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React JS</li>
+            </ul>
+        </div>
+        <div class="skills-box px-10 py-4 bg-white border border-gray-300 bg-yellow-100 rounded-lg shadow-md  ml-[50%] h-[45%] w-[35%]" id="skills-box-be">
+            <h1 class="text-xl font-semibold mb-2">Backend Developer</h1>
+            <ul class="list-disc pl-5">
+                <li>Node.Js</li>
+                <li>Express.Js</li>
+                <li>Passport.Js</li>
+                <li>Multer.JS</li>
+            </ul>
+        </div>
+        <div class="skills-box px-10 py-4 bg-white border border-gray-300 rounded-lg bg-yellow-100 shadow-md ml-[25%] h-[45%] w-[35%] mt-4" id="skills-box-database">
+            <h1 class="text-xl font-semibold mb-2">DataBase</h1>
+            <ul class="list-disc pl-5">
+                <li>MongoDB</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+    </div>
+    
+        <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sleft = ScrollReveal({
+            origin: "left",
+            distance: "100px",
+            duration: 2000,
+            reset: true
+          });
+     
+          sleft.reveal("#skills-box-fe", {delay: 100});
+         
+        })
+</script>
+  
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sbottom = ScrollReveal({
+              origin: "bottom",
+              distance: "100px",
+              duration: 2000,
+              reset: true
+            });
+       
+            sbottom.reveal("#skills-box-database", {delay: 200});
+           
+          })
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sright = ScrollReveal({
+              origin: "right",
+              distance: "100px",
+              duration: 2000,
+              reset: true
+            });
+       
+            sright.reveal("#skills-box-be", {delay: 200});
+           
+          })
+  </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>

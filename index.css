@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    /* background-color: #000;
+    color:#fff; */
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+ ::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #bbb;
+}
+#right img{
+    animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.section{
+padding-left: 55px;
+padding-top: 45px;
+}
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding-left: 60px;
+}
+.section-title h2{
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+}
+.section-title h2::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: red;
+    position: absolute;
+    top: 90%;
+    left: 0;
+}
+.section-title h2::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: red;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    margin-top: 10px;
+}
+.about .about-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .about-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .about-text h3{
+font-size: 24px;
+margin-bottom: 15px;
+font-weight: 700;
+color: black;
+}
+.about .about-content .about-text h3 span{
+    color: red;
+}
+.about .about-content .about-text p{
+    line-height: 25px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.516);
+}
+.row .details{
+    display: flex;
+}
+.about .about-content .personal-info{
+    max-width: 60%;
+    flex: 0 0 60%;
+    margin-top: 40px;
+}
+.about .about-content .personal-info .info-item{
+    flex: 0 0 50%;
+    max-width: 50%;
+   
+}
+.about .about-content .personal-info .info-item p {
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.574);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.229);
+}
+.about .about-content .personal-info .info-item p span{
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.648);
+    margin-left: 4px;
+    display: inline-block;
+}
+.about .about-content .personal-info .buttons{
+     margin-top: 30px;
+}
+.about .about-content .personal-info .buttons .btn{
+    margin-right: 15px;
+margin-top: 10px;
+}
+.about .about-content .skills{
+    max-width: 40%;
+   
+    flex: 0 0 40%;
+    margin-top: 40px;
+
+}
+.about .about-content .skills .skill-item{
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+.about .about-content .skills .skill-item h5{
+    line-height: 40px;
+    font-weight: 600;
+font-size: 16px;
+color: black;
+text-transform: capitalize;
+}
+.about .about-content .skills .skill-item .progress{
+    background-color: #00000026;
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .skills .skill-item{
+    margin-bottom: 25px;
+}
+.about .about-content .skills .skill-item .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: rgb(231, 14, 86) ;
+}
+.about .about-content .skills .skill-item .skill-percent{
+    position: absolute;
+    right: 0;
+    color: rgba(0, 0, 0, 0.911);
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.edu-details{
+    display: flex;
+   gap: 50px;
+}
+.about .about-content .education,
+.about .about-content .experience{
+    flex: 0 0 50%;
+    margin-top: 30px;
+    max-width: 50%;
+}
+.about .about-content h3.title{
+font-size: 24px;
+margin-bottom: 30px;
+font-weight: 700;
+color: rgba(0, 0, 0, 0.87);
+}
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background-color: rgb(231, 14, 86);
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+.about .about-content .timeline-box{
+    max-width: 100%;
+  
+ 
+}
+.about .about-content .timeline{
+    background-color: rgba(0, 0, 0, 0.046);
+    padding: 30px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+.about .about-content .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.about .about-content .timeline .timeline-item:last-child{
+    padding-bottom: 0;
+}
+.about .about-content .timeline .timeline-item::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: rgb(231, 14, 86) ;
+}
+.about .about-content .timeline .circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: rgb(231, 14, 86) ;
+}
+.about .about-content .timeline .timeline-date{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #0000005c;
+}
+.about .about-content .timeline .timeline-date .fa{
+margin-right: 5px;
+}
+.about .about-content .timeline .timeline-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.878);
+}
+.about .about-content .timeline .timeline-text{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.574);
+
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about .about-content .personal-info,
+    .about .about-content .skills {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .about .about-content .skills .skill-item h5 {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+
+    .edu-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about .about-content .education,
+    .about .about-content .experience {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 10px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .about .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .about-content .personal-info,
+    .about .about-content .skills {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about .about-content .skills .skill-item {
+        margin-bottom: 15px;
+    }
+
+    .about .about-content .timeline {
+        padding: 20px;
+    }
+
+    .about .about-content .timeline .timeline-title {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .about .about-content .about-text h3 {
+        font-size: 20px;
+    }
+
+    .about .about-content .personal-info .info-item p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+
+    .about .about-content .timeline .timeline-text {
+        font-size: 14px;
+    }
+}
+/* #headings{
+    height: 300px;
+    width: 100%;
+    display: flex;
+} */
+ 
