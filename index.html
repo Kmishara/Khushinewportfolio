@@ -33,13 +33,25 @@
     >
       <div class="container mx-auto flex justify-between" id="header">
         <h1 class="font-bold">Khushi</h1>
-        <div id="links">
+        <button id="menu-btn" class="md:hidden text-yellow-200 text-3xl focus:outline-none">
+          ☰
+        </button>
+        <div id="links" class="hidden md:flex space-x-4">
           <a href="./" class="px-4">Home</a>
           <a href="./Projects.html" class="px-4">Project</a>
           <a href="./Skills.html" class="px-4">Skills</a>
           <a href="./Contact.html" class="px-4">Contact</a>
         </div>
       </div>
+
+      <div id="mobile-menu" class="fixed top-0 right-[-100%] w-2/3 h-full bg-black text-yellow-200 flex flex-col items-start p-6 transition-all duration-300">
+        <button id="close-menu" class="text-2xl self-end">✖</button>
+        <a href="./" class="py-2 w-full text-left">Home</a>
+        <a href="./Projects.html" class="py-2 w-full text-left">Project</a>
+        <a href="./Skills.html" class="py-2 w-full text-left">Skills</a>
+        <a href="./Contact.html" class="py-2 w-full text-left">Contact</a>
+      </div>
+
     </nav>
     <!-- home -->
     <div
@@ -75,7 +87,7 @@
         <a
         href="./KhushiResume (7).pdf"
         download="Your_Resume.pdf"
-        class="bg-yellow-200 w-[190px] text-black px-6 py-2 rounded-lg shadow-md hover:bg-yellow-300 transition block text-center"
+        class="bg-yellow-200 w-[190px] text-black px-6 py-2 rounded-lg shadow-md hover:bg-yellow-300 transition block text-center download-resume "
       >
         Download Resume
       </a>
@@ -180,7 +192,7 @@
             <span class="text-lg text-gray-600 font-semibold">01.</span>
             <div class="flex justify-between items-center">
               <h1 class="text-2xl py-2 font-semibold">Spotify Clone</h1>
-              <button class="toggle-btn text-3xl font-bold text-blue-600">
+              <button class="toggle-btn text-3xl font-bold text-gray-600">
                 +
               </button>
             </div>
@@ -200,7 +212,7 @@
             <span class="text-lg text-gray-600 font-semibold">02.</span>
             <div class="flex justify-between items-center">
               <h1 class="text-2xl py-2 font-semibold">Food</h1>
-              <button class="toggle-btn text-3xl font-bold text-blue-600">
+              <button class="toggle-btn text-3xl font-bold text-gray-600">
                 +
               </button>
             </div>
@@ -220,7 +232,7 @@
             <span class="text-lg text-gray-600 font-semibold">03.</span>
             <div class="flex justify-between items-center">
               <h1 class="text-2xl py-2 font-semibold">E-commerce</h1>
-              <button class="toggle-btn text-3xl font-bold text-blue-600">
+              <button class="toggle-btn text-3xl font-bold text-gray-600">
                 +
               </button>
             </div>
@@ -240,7 +252,7 @@
             <span class="text-lg text-gray-600 font-semibold">04.</span>
             <div class="flex justify-between items-center">
               <h1 class="text-2xl py-2 font-semibold">Website</h1>
-              <button class="toggle-btn text-3xl font-bold text-blue-600">
+              <button class="toggle-btn text-3xl font-bold text-gray-600">
                 +
               </button>
             </div>
@@ -389,6 +401,21 @@
       });
     </script>
   
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+const closeMenu = document.getElementById("close-menu");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.add("active");
+});
+
+closeMenu.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+});
+
+</script>
+
     <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 </html>

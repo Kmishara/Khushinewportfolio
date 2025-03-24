@@ -9,20 +9,34 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-black">
-    <nav id="headings" class="bg-black  p-4 text-yellow-200">
-      <div class="container mx-auto flex justify-between">
-        <h1 class="font-bold text-xl">Khushi</h1>
-
-        <div id="links">
-          <a href="/" class="px-4">Home</a>
-          <a href="./Projects.html" class="px-4">Project</a>
-          <a href="./Skills.html" class="px-4">Skills</a>
-          <a href="./Contact.html" class="px-4">Contact</a>
-        </div>
+    <nav
+    id="headings"
+    class="bg-black p-4 text-yellow-200 fixed top-0 left-0 w-full z-20"
+  >
+    <div class="container mx-auto flex justify-between" id="header">
+      <h1 class="font-bold">Khushi</h1>
+      <button id="menu-btn" class="md:hidden text-yellow-200 text-3xl focus:outline-none">
+        ☰
+      </button>
+      <div id="links" class="hidden md:flex space-x-4">
+        <a href="./" class="px-4">Home</a>
+        <a href="./Projects.html" class="px-4">Project</a>
+        <a href="./Skills.html" class="px-4">Skills</a>
+        <a href="./Contact.html" class="px-4">Contact</a>
       </div>
-    </nav>
+    </div>
+
+    <div id="mobile-menu" class="fixed top-0 right-[-100%] w-2/3 h-full bg-black text-yellow-200 flex flex-col items-start p-6 transition-all duration-300">
+      <button id="close-menu" class="text-2xl self-end">✖</button>
+      <a href="./" class="py-2 w-full text-left">Home</a>
+      <a href="./Projects.html" class="py-2 w-full text-left">Project</a>
+      <a href="./Skills.html" class="py-2 w-full text-left">Skills</a>
+      <a href="./Contact.html" class="py-2 w-full text-left">Contact</a>
+    </div>
+
+  </nav>
     <div class="mt-6 bg-black" >
-      <p class="text-center font-bold text-xl text-white">
+      <p class="text-center font-bold text-xl text-white p-text-p">
         Take a look and explore the work that defines my journey as a developer.
       </p>
       <section id="projects-section">
@@ -122,6 +136,21 @@
             seeLessButton.style.display = "none"; // Hide "See Less" button
         });
     });
+</script>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+const closeMenu = document.getElementById("close-menu");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.add("active");
+});
+
+closeMenu.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+});
+
 </script>
     <!-- <script src="./script.js"></script> -->
   </body>
